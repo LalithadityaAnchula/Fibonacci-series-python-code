@@ -1,0 +1,11 @@
+t1,t2,i=-1,1,1
+n=int(input("Number of Fibonacci numbers required in sequence : "))
+print("Fibonacci numbers : ",end="")
+while i<=n:
+    sum=t1+t2
+    print(sum,end="")
+    if i!=n:
+        print(",",end="")
+    t1=t2
+    t2=sum
+    i=i+1
